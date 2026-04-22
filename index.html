@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 radial-gradient(circle at 20% 30%, rgba(0, 122, 255, 0.05) 0%, transparent 40%),
                 radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.05) 0%, transparent 40%);
             z-index: -1;
@@ -90,7 +91,8 @@
 
         main {
             padding-top: 80px;
-            padding-bottom: 150px; /* Espacio para nav-controls y footer */
+            padding-bottom: 150px;
+            /* Espacio para nav-controls y footer */
             height: 100vh;
             display: flex;
             align-items: center;
@@ -141,7 +143,7 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
         }
 
         .image-preview img {
@@ -149,7 +151,7 @@
             max-height: 100%;
             object-fit: contain;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .content {
@@ -288,7 +290,7 @@
         .progress-container {
             width: 200px;
             height: 4px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             overflow: hidden;
         }
@@ -307,21 +309,33 @@
                 gap: 1.5rem;
                 text-align: center;
             }
+
             .content {
                 align-items: center;
             }
-            .badge { margin: 0 auto; }
-            .image-preview { height: 400px; }
-            .content h2 { font-size: 1.8rem; }
+
+            .badge {
+                margin: 0 auto;
+            }
+
+            .image-preview {
+                height: 400px;
+            }
+
+            .content h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="bg-glow"></div>
-    
+
     <header>
         <div class="logo-container">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAACiCAMAAABBJhAmAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAwBQTFRFTGlx/////v7+nAgq//////////////3//////////JoBgAdJ/bgT////eh9X////64EVwr8A/bYR/6kD////9oIf////9YEe//8A////////////9IIfex9X/////LcT////////////////////////eh9W/////////////////////v7+////////////////////////////fB9X////////////////////9IEf////////////////////////////////////////9YIf/////////////LcS/////////////////LgR////////////////////////8nka9oIe9IEf////////////////////////eR1X////////////////////////////////////////////////////////ex5X////////eR1WfRtUeh5WeyBW/////v7+////////eh5X/////////v7+eh5Weh5Weh5W////////////eh5W8n8d////eh5Wex5Weh5WeR1W+YUfex1Xeh1XeRtWeh5W9YEeeh5W/bsT95AS+7gS+IYf9YIeeh5W9oIeex5Xeh5W9YEg9IAd+KAX96oV/bcS7Yweeh5W9IAe9IEe9YIe9YIe/boS/boS/LcS84Ed/bgT/LYS+4cep0NF9YIe84Eg+7kR/roS/LkS9oMeeh5W/bkS9YIe/LUT9o4Z/LYT/bgS/boSeh5Wz3ww83ci95wY/KoVoD5Iex9X/////bgT9YIf/8IU+oUf9YEf9YQf/rkT/bEVgiBbfyBafSBWhCFd/4sg/YYf/8MU8VoidBta/rwSgyFd/78TfB9W/LcTeB1Y9Hgg/8YU/4gg+F4e+IMf9n0f83Ih814hcRlbnjNIchdb9oMfkS9PhSVT+30d+6AY9Ggg+JEb/aoW/YEc6Vkmszw/+XgexUQ3000x/8sV3mot4VIqtEo/v1M7/4Ic53Iox1w373Uk0F8y12Mv75cghiNb6m0lqKH7NAAAAAF0Uk5TAEDm2GYA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" alt="Logo" style="height: 64px; width: auto; object-fit: contain;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAACiCAMAAABBJhAmAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAwBQTFRFTGlx/////v7+nAgq//////////////3//////////JoBgAdJ/bgT////eh9X////64EVwr8A/bYR/6kD////9oIf////9YEe//8A////////////9IIfex9X/////LcT////////////////////////eh9W/////////////////////v7+////////////////////////////fB9X////////////////////9IEf////////////////////////////////////////9YIf/////////////LcS/////////////////LgR////////////////////////8nka9oIe9IEf////////////////////////eR1X////////////////////////////////////////////////////////ex5X////////eR1WfRtUeh5WeyBW/////v7+////////eh5X/////////v7+eh5Weh5Weh5W////////////eh5W8n8d////eh5Wex5Weh5WeR1W+YUfex1Xeh1XeRtWeh5W9YEeeh5W/bsT95AS+7gS+IYf9YIeeh5W9oIeex5Xeh5W9YEg9IAd+KAX96oV/bcS7Yweeh5W9IAe9IEe9YIe9YIe/boS/boS/LcS84Ed/bgT/LYS+4cep0NF9YIe84Eg+7kR/roS/LkS9oMeeh5W/bkS9YIe/LUT9o4Z/LYT/bgS/boSeh5Wz3ww83ci95wY/KoVoD5Iex9X/////bgT9YIf/8IU+oUf9YEf9YQf/rkT/bEVgiBbfyBafSBWhCFd/4sg/YYf/8MU8VoidBta/rwSgyFd/78TfB9W/LcTeB1Y9Hgg/8YU/4gg+F4e+IMf9n0f83Ih814hcRlbnjNIchdb9oMfkS9PhSVT+30d+6AY9Ggg+JEb/aoW/YEc6Vkmszw/+XgexUQ3000x/8sV3mot4VIqtEo/v1M7/4Ic53Iox1w373Uk0F8y12Mv75cghiNb6m0lqKH7NAAAAAF0Uk5TAEDm2GYA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"
+                alt="Logo" style="height: 64px; width: auto; object-fit: contain;">
             <h1>LA CASA DE LOS NIÑOS</h1>
         </div>
         <div class="slide-counter"><span id="current-slide">01</span> / <span id="total-slides">00</span></div>
@@ -335,13 +349,19 @@
 
     <div class="nav-controls">
         <button class="nav-btn" id="prev-btn" onclick="moveSlide(-1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
         </button>
         <div class="progress-container">
             <div class="progress-bar" id="progress"></div>
         </div>
         <button class="nav-btn" id="next-btn" onclick="moveSlide(1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
         </button>
     </div>
 
@@ -353,7 +373,12 @@
         </div>
         <div class="footer-credits">
             <button class="export-btn" onclick="exportToPPT()">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
                 Exportar a PPTX
             </button>
             <div class="footer-credits-text">
@@ -525,7 +550,7 @@
 
         function init() {
             totalCounter.innerText = String(slidesData.length).padStart(2, '0');
-            
+
             slidesData.forEach((slide, index) => {
                 const slideEl = document.createElement('div');
                 slideEl.className = `slide ${index === 0 ? 'active' : ''}`;
@@ -547,12 +572,12 @@
         function moveSlide(direction) {
             const slides = document.querySelectorAll('.slide');
             slides[currentIdx].classList.remove('active');
-            
+
             currentIdx += direction;
-            
+
             if (currentIdx < 0) currentIdx = 0;
             if (currentIdx >= slidesData.length) currentIdx = slidesData.length - 1;
-            
+
             slides[currentIdx].classList.add('active');
             updateUI();
         }
@@ -560,7 +585,7 @@
         function updateUI() {
             currentCounter.innerText = String(currentIdx + 1).padStart(2, '0');
             progress.style.width = `${((currentIdx + 1) / slidesData.length) * 100}%`;
-            
+
             document.getElementById('prev-btn').disabled = currentIdx === 0;
             document.getElementById('next-btn').disabled = currentIdx === slidesData.length - 1;
         }
@@ -627,4 +652,5 @@
         init();
     </script>
 </body>
+
 </html>
