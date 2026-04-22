@@ -358,7 +358,7 @@
                 visibility: visible;
                 transform: none;
             }
-            
+
             .slide.active {
                 display: flex;
             }
@@ -383,7 +383,8 @@
 
             .content p {
                 font-size: 0.95rem;
-                color: #e0e0e0; /* Increased contrast */
+                color: #e0e0e0;
+                /* Increased contrast */
                 padding: 0 5px;
             }
 
@@ -438,7 +439,7 @@
                 font-size: 0.95rem;
                 max-width: 130px;
             }
-            
+
             .image-preview {
                 height: 180px;
             }
@@ -463,28 +464,29 @@
     </header>
 
     <main>
+        <div class="nav-controls">
+            <button class="nav-btn" id="prev-btn" onclick="moveSlide(-1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+            <button class="nav-btn" id="next-btn" onclick="moveSlide(1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
         <div class="slider-container" id="slider">
-            <!-- Slides will be injected by JavaScript -->
         </div>
     </main>
 
-    <div class="nav-controls">
-        <button class="nav-btn" id="prev-btn" onclick="moveSlide(-1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-        </button>
-        <div class="progress-container">
-            <div class="progress-bar" id="progress"></div>
-        </div>
-        <button class="nav-btn" id="next-btn" onclick="moveSlide(1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-        </button>
-    </div>
+
 
     <footer>
         <div class="footer-info">
