@@ -303,27 +303,148 @@
         }
 
         @media (max-width: 1000px) {
-            .slide {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr auto;
-                gap: 1.5rem;
-                text-align: center;
-            }
-
-            .content {
+            header {
+                position: sticky;
+                padding: 0.8rem 4%;
+                height: auto;
+                min-height: 60px;
+                display: flex;
                 align-items: center;
+                justify-content: space-between;
+                backdrop-filter: blur(10px);
             }
 
-            .badge {
+            .logo-container {
+                gap: 8px;
+            }
+
+            .logo-container h1 {
+                font-size: 1.1rem;
+                line-height: 1.2;
+                white-space: normal;
+                max-width: 160px;
+                -webkit-text-fill-color: white;
+            }
+
+            .logo-container img {
+                height: 30px !important;
+            }
+
+            .slide-counter {
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding: 20px 0;
+                height: auto;
+                min-height: calc(100vh - 250px);
+                display: block;
+            }
+
+            .slider-container {
+                width: 92%;
                 margin: 0 auto;
+                height: auto;
+                position: relative;
+            }
+
+            .slide {
+                position: relative;
+                display: none;
+                flex-direction: column;
+                height: auto;
+                gap: 1.2rem;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+            }
+            
+            .slide.active {
+                display: flex;
             }
 
             .image-preview {
-                height: 400px;
+                height: 220px;
+                width: 100%;
+                padding: 0.6rem;
+                border-radius: 12px;
+            }
+
+            .content {
+                width: 100%;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 10px 0;
             }
 
             .content h2 {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
+            }
+
+            .content p {
+                font-size: 0.95rem;
+                color: #e0e0e0; /* Increased contrast */
+                padding: 0 5px;
+            }
+
+            .nav-controls {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                padding: 20px 0;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .progress-container {
+                width: 100px;
+            }
+
+            footer {
+                position: relative;
+                flex-direction: column;
+                height: auto;
+                padding: 2rem 5%;
+                gap: 1.5rem;
+                background: rgba(10, 10, 10, 0.95);
+            }
+
+            .footer-info {
+                font-size: 0.75rem;
+                order: 2;
+                opacity: 0.6;
+            }
+
+            .footer-credits {
+                flex-direction: column;
+                gap: 15px;
+                order: 1;
+                width: 100%;
+            }
+
+            .export-btn {
+                width: 100%;
+                padding: 14px;
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .logo-container h1 {
+                font-size: 0.95rem;
+                max-width: 130px;
+            }
+            
+            .image-preview {
+                height: 180px;
+            }
+
+            .content h2 {
+                font-size: 1.2rem;
             }
         }
     </style>
